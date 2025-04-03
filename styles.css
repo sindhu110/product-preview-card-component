@@ -1,0 +1,136 @@
+
+
+:root {
+    
+    --bg-color: hsl(30, 38%, 92%);
+    --color-White: hsl(0, 0%, 100%);
+    --color-Grey: hsl(228, 12%, 48%);
+    --color-Black: hsl(212, 21%, 14%);
+    --color-Green: hsl(158, 42%, 18%);
+    --Green: hsl(158, 36%, 37%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-size: 14px;
+}
+
+
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    background: var(--color-White);
+    border-radius: 12px;
+    overflow: hidden;
+    
+}
+
+
+.product-image picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.product-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--color-Grey);
+}
+
+h1 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: var(--color-Black);
+}
+
+.description {
+    font-size: 14px;
+    color: var(--color-Grey);
+    line-height: 1.4;
+}
+
+
+.price {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--Green);
+}
+
+.old-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: var(--color-Grey);
+}
+
+
+.add-to-cart {
+    background: var(--Green);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.add-to-cart img {
+    width: 16px;
+    height: auto;
+}
+
+
+.add-to-cart:hover {
+    background: var(--color-Green);
+}
+
+
+@media (max-width: 600px) {
+    .product-card {
+        grid-template-columns: 1fr;
+    }
+}
