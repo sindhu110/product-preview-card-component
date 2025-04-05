@@ -171,3 +171,27 @@ h1 {
         height: auto;
     }
 }
+
+@media (max-width: 350px) {
+    body {
+      padding: 30px 15px;
+    }
+  
+    .product-card {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .new-price {
+      font-size: 20px;
+    }
+  
+    .add-to-cart {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
