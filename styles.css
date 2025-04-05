@@ -174,13 +174,10 @@ h1 {
 
 @media (max-width: 350px) {
     body {
-      padding: 30px 15px;
+      padding: 30px;
     }
   
-    .product-card {
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
+    
   
     h1 {
       font-size: 20px;
