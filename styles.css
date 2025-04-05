@@ -136,20 +136,32 @@ h1 {
 
 
 @media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
     .product-card {
         grid-template-columns: 1fr;
-       
+        width: 100%;
     }
+
     .product-details {
         padding: 20px;
     }
+
     h1 {
         font-size: 24px;
     }
+
     .new-price {
         font-size: 24px;
     }
+
     .add-to-cart {
         padding: 12px;
+    }
+
+    .product-image img {
+        height: auto;
     }
 }
