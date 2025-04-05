@@ -175,6 +175,8 @@ h1 {
 @media (max-width: 350px) {
     body {
       padding: 30px;
+      justify-content: center;
+      align-items: center;
     }
   
     
